@@ -38,7 +38,7 @@ export default function App() {
 
   const [, response, signInWithGithub] = useAuthRequest(
     {
-      clientId: 'bc9335653f9dbe4d30ef',
+      clientId: '0bccc89c46e11837a4fc',
       scopes: ['identity'],
       redirectUri: makeRedirectUri({
         scheme: 'nlwspacetime',
@@ -57,10 +57,11 @@ export default function App() {
     await SecureStore.setItemAsync('token', token)
 
     router.push('/memories')
+    console.log('/memories')
   }
 
   useEffect(() => {
-    // console.log(makeRedirectUri)
+    console.log(makeRedirectUri())
     if (response?.type === 'success') {
       const { code } = response.params
       handleGitHubCode(code)
