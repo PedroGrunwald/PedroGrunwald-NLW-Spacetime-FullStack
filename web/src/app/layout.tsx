@@ -2,7 +2,6 @@
 import './globals.css'
 import { Roboto_Flex as Roboto, Bai_Jamjuree as BainJamJuree, } from 'next/font/google'
 import { ReactNode } from 'react'
-import { EmptyMemories } from '@/components/EmptyMemories'
 import { Hero } from '@/components/Hero'
 import { Profile } from '@/components/Profile'
 import { Sigin } from '@/components/Sigin'
