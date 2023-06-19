@@ -6,7 +6,7 @@ import { authRoutes } from './routes/auth'
 import jwt from '@fastify/jwt'
 import multipart from '@fastify/multipart'
 import { uploadRoutes } from './routes/upload'
-
+// import { resolve } from 'node:path'
 const app = fastify()
 
 app.register(multipart)
