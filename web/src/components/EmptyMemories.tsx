@@ -3,7 +3,7 @@ export function EmptyMemories(){
         <div className="flex flex-1 items-center justify-center">
         <p className="text-center leading-relaxed w-[360px]">
           Voce ainda não registrou nenhuma lembrança, comece a {''}
-          <a href="" className="underline hover:text-gray-50">
+          <a href="/memories/new" className="underline hover:text-gray-50">
             criar agora</a>!!</p>
       </div>
     )
