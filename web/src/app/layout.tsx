@@ -1,4 +1,3 @@
-
 import './globals.css'
 import { Roboto_Flex as Roboto, Bai_Jamjuree as BainJamJuree, } from 'next/font/google'
 import { ReactNode } from 'react'
