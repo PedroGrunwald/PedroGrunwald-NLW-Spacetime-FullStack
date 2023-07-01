@@ -11,7 +11,7 @@ export function Hero() {
           Sua cápsula do tempo
         </h1>
         <p className=" text-lg leading-relaxed">
-          Colecione momentos marcantes da sua jornada e compartile (se quiser) com o mundo
+          Colecione momentos marcantes da sua jornada e compartilhe (se quiser) com o mundo
         </p>
       </div>
       <Link

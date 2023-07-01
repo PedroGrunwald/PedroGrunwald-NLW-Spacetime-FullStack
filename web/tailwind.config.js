@@ -32,6 +32,7 @@ module.exports = {
           400: '#9b79ea',
           500: '#8257e5',
           600: '#764fd0',
+          650: '#663bbc',
           700: '#5c3ea3',
           800: '#48307e',
           900: '#372560',
@@ -79,17 +80,17 @@ module.exports = {
         stripes: 'linear-gradient(to bottom, rgba(255,255,255,0.1),rgba(255,255,255,0.1) 12.5%, transparent 12.5%, transparent)'
       },
       backgroundSize: {
-        stripes:'100% 8px'
+        stripes: '100% 8px'
       },
       blur: {
         full: '194px'
       },
-      fontSize:{
-        '5xl':'2.5rem',
+      fontSize: {
+        '5xl': '2.5rem',
       }
     },
   },
-  plugins: [ require('@tailwindcss/forms'),],
+  plugins: [require('@tailwindcss/forms'),],
 }
 
 
