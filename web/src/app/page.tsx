@@ -4,6 +4,8 @@ import { cookies } from 'next/headers'
 import dayjs from 'dayjs'
 import ptBr from 'dayjs/locale/pt-br'
 import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
 dayjs.locale(ptBr)
 
@@ -55,11 +57,17 @@ export default async function Home() {
               width={592}
               height={280}
               alt=''
-              className='w-full aspect-video object-cover rounded-lg' 
-              />
-              <p className='text-lg leading-relaxed text-gray-100'>
-                {memory.excerpt}
-              </p>
+              className='w-full aspect-video object-cover rounded-lg'
+            />
+            <p className='text-lg leading-relaxed text-gray-100'>
+              {memory.excerpt}
+            </p>
+            <Link
+              href={`/memories/${memory.id}`}
+              className='flex items-center gap-2 text-sm text-gray-200 hover:text-gray-100'>
+              Ler mais
+              <ArrowRight className='w-4 h-4' />
+            </Link>
           </div>
         )
       })}
