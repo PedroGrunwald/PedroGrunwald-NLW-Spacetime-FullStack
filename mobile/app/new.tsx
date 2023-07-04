@@ -59,7 +59,7 @@ export default function NewMemory() {
       })
 
       coverUrl = uploadResponse.data.fileUrl
-
+      console.log(coverUrl)
     }
 
     await api.post('/memories', {
